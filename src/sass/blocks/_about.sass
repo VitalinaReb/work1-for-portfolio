@@ -1,0 +1,41 @@
+.about
+    padding: 90px 0 100px 0
+    &__descr
+        color: #999999
+        font-family: 'Roboto', sans-serif
+        text-align: center
+        margin-bottom: 90px
+    &__img
+        display: flex
+        justify-content: space-between
+        &-items
+            width: 380px
+            background-color: #95e1d3
+            position: relative
+
+        &-items:hover &__photo img
+            opacity: 0.1
+        &__photo
+            background: linear-gradient(to bottom, #f38181, #fce38a)
+
+            transition: 0.5s
+            img
+                display: block
+        &-items:hover &__photo
+            transform: translate3d(-3%, -3%, 0)
+        
+        &__text
+            font-size: 18px
+            font-weight: 700
+            color: #fff
+            text-transform: uppercase
+            position: absolute
+            text-align: center
+            z-index: 3
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+            width: 100%
+            opacity: 0
+        &-items:hover &__text
+            opacity: 1
