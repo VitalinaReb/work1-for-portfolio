@@ -1,0 +1,57 @@
+.team
+    margin-top: 100px
+    &__items
+        display: flex
+        justify-content: space-between
+    &__inner
+        width: 380px
+        background-color: #95e1d3
+        position: relative
+    &__inner:hover &__photo img
+            opacity: 0.1
+    &__photo
+        background: linear-gradient(to bottom, #f38181, #fce38a)
+        transition: 0.5s
+        img
+            display: block
+    &__inner:hover &__photo
+        transform: translate3d(-3%, -3%, 0)
+
+    &__social
+        
+        position: absolute
+        text-align: center
+        z-index: 3
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        width: 100%
+        opacity: 0
+        &_item
+            text-decoration: none
+            img
+                height: 25px
+                width: 25px
+        &_item:first-child
+            margin-right: 10px
+     
+    &__inner:hover &__social
+        opacity: 1
+
+    &__text
+        text-align: center
+
+    &__name
+        margin-top: 35px
+        text-transform: uppercase
+    &__prof
+        margin-top: 5px
+        font-style: italic
+        color: #cccccc
+
+.logos
+    margin-top: 100px
+    background-color: #f8f8f8
+    &__img
+        padding: 60px 0
+    

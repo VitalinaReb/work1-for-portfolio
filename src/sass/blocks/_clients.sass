@@ -1,0 +1,28 @@
+.clients
+    min-height: 830px
+    margin-top: 100px
+    background: url('../img/group4.jpg') center center/cover no-repeat
+    padding: 80px 0 
+    &__items
+        margin-top: 100px
+        display: grid
+        grid-template-columns: repeat(2 , 1fr)
+        grid-template-rows: repeat(2 , 170px)
+        gap: 70px
+        grid-auto-rows: 170px
+    &__item
+        display: flex
+    &__img
+        margin-right: 25px
+    &__name
+        text-transform: uppercase
+        margin-bottom: 10px
+    &__prof
+        font-style: italic
+        margin-bottom: 20px
+    &__divider
+        margin: 0
+        margin-bottom: 25px
+    &__descr
+        font-family: 'Roboto', sans-serif
+        color: #999999

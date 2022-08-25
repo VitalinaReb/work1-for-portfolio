@@ -1,0 +1,59 @@
+.work
+    margin-top: 100px
+    &__wrapper
+       display: flex
+    &__item
+        position: relative
+        background: linear-gradient(to bottom, #f38181, #fce38a)
+       
+        img
+            display: block
+            max-width: 100%
+            height: auto
+            transition: 0.5s
+    &__item:hover img
+        opacity: 0.1
+    &__info
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        color: #fff
+        text-align: center
+        width: 100%
+        opacity: 0
+    &__item:hover &__info
+        opacity: 1
+    &__title
+        text-transform: uppercase
+        margin-bottom: 10px
+    &__text
+        font-style: italic
+        font-size: 14px
+        align-items: center
+
+    &__footer
+        margin-top: 100px
+        display: flex
+        align-items: center
+        &_text
+            margin-left: 60px
+            align-items: center
+        &_descr
+            font-style: italic
+            color: #999999
+            font-size: 24px
+        &_author
+            margin-top: 25px
+            font-size: 24px
+            font-family: "Kaushan Script",cursive
+        &_author::before
+            content: ""
+            display: inline-block
+            vertical-align: middle
+            margin-right: 10px
+            width: 70px
+            height: 4px
+            background: #f38181
+
+
+    
